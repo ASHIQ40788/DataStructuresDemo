@@ -27,9 +27,15 @@ namespace DataStructureDemo058
             //customLinkedList.InsertLast(30);
             //customLinkedList.InsertLast(70);
 
-            customLinkedList.InsertFront(70);
-            customLinkedList.InsertFront(30);
-            customLinkedList.InsertFront(56);
+            //UC2 Insert Front
+            //customLinkedList.InsertFront(70);
+            //customLinkedList.InsertFront(30);
+            //customLinkedList.InsertFront(56);
+
+            //UC3 append
+            customLinkedList.Append(56);
+            customLinkedList.Append(30);
+            customLinkedList.Append(70);
 
             customLinkedList.Display();
             Console.ReadLine();

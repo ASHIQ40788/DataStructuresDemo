@@ -46,6 +46,11 @@ namespace DataStructureDemo058
             Console.WriteLine("Inserted into List " + new_node.data);
         }
 
+        public void Append(int new_data)
+        {
+            InsertFront(new_data);
+        }
+
         public void Display()
         {
             Console.WriteLine("Displaying nodes");
