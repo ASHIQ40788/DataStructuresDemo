@@ -32,6 +32,41 @@ namespace DataStructureDemo058
             }
             return temp;
         }
+
+
+        //UC 2
+        public void InsertFront(int new_data)
+        {
+            //we will create a new node .The next of the new node will point to the head of the Linked List.
+            Node new_node = new Node(new_data);
+            //When we want to add any node at the frontt we want rge ahead to point to it.
+            new_node.next  = this.head;
+            //the previos head node is now the second node of Linked List because the new node is added at the front.
+            this.head = new_node;
+            Console.WriteLine("Inserted into List " + new_node.data);
+        }
+
+        public void Display()
+        {
+            Console.WriteLine("Displaying nodes");
+            Node temp = this.head;
+            if(temp == null)
+
+                {
+                Console.WriteLine("LinkedList is empty");
+                return;
+            }
+            else
+            {
+                while (temp != null)
+                {
+                    Console.Write(" " + temp.data + "");
+                    temp = temp.next;
+                }
+                
+                //Console.Write(" " + temp.data);
+            }
+        }
     }
 }
 
