@@ -33,10 +33,13 @@ namespace DataStructureDemo058
             //customLinkedList.InsertFront(56);
 
             //UC3 append
-            customLinkedList.Append(56);
-            customLinkedList.Append(30);
-            customLinkedList.Append(70);
+            //customLinkedList.Append(56);
+            //customLinkedList.Append(30);
+            //customLinkedList.Append(70);
 
+            customLinkedList.InsertAfter(70);
+            customLinkedList.InsertAfter(30);
+            customLinkedList.InsertAfter(56);
             customLinkedList.Display();
             Console.ReadLine();
 

@@ -9,6 +9,7 @@ namespace DataStructureDemo058
     class CustomLinkedList
     {
         public Node head;
+        public Node prev_node;
         public void InsertLast(int new_data)
         {
             Node new_node = new Node(new_data);
@@ -46,11 +47,23 @@ namespace DataStructureDemo058
             Console.WriteLine("Inserted into List " + new_node.data);
         }
 
+        //UC3
         public void Append(int new_data)
         {
             InsertFront(new_data);
         }
 
+        internal void InsertAfter(int new_data)
+        {
+            if (prev_node == null)
+            {
+                Console.WriteLine("The given previous node Cannot be null");
+                return;
+            }
+            Node new_node = new Node(new_data);
+            new_node.next = prev_node.next;
+            prev_node.next = new_node;
+        }
         public void Display()
         {
             Console.WriteLine("Displaying nodes");
