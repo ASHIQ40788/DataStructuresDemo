@@ -111,6 +111,28 @@ namespace DataStructureDemo058
         }
 
         /// <summary>
+        /// UC 7 search for particular node
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+
+        public int Search(int value)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Console.WriteLine("\nNode is present ");
+                    return value;
+                }
+                temp = temp.next;
+            }
+            return value;
+        }
+
+
+        /// <summary>
         /// Display values in Nodes.
         /// </summary>
         public void Display()
