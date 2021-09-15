@@ -52,15 +52,12 @@ namespace DataStructureDemo058
             //Console.ReadLine();
 
             //UC6 Delete last node
-            //customLinkedList.Display();
-            //Console.WriteLine("\nDeleted node:" + customLinkedList.DeleteLastNode());
-            //customLinkedList.Display();
-            //Console.ReadLine();
-
-            //UC7 Search for a Node
             customLinkedList.Display();
-            Console.WriteLine(customLinkedList.Search(30));
+            Console.WriteLine("\nDeleted node:" + customLinkedList.DeleteLastNode());
+            customLinkedList.Display();
             Console.ReadLine();
+
+
 
         }
     }

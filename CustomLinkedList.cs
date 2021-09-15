@@ -53,7 +53,7 @@ namespace DataStructureDemo058
             InsertFront(new_data);
         }
         /// <summary>
-        /// UC4
+        /// UC4 Insert Middle in Linked List
         /// </summary>
         /// <param name="new_data"></param>
         internal void InsertAfter(int new_data)
@@ -83,10 +83,11 @@ namespace DataStructureDemo058
             return deleteNode;
         }
 
+
         /// <summary>
         /// UC6 Delete last node
         /// </summary>
-   
+
         public int DeleteLastNode()
         {
             Node newNode = this.head;
@@ -107,27 +108,6 @@ namespace DataStructureDemo058
             int lastDeletedNode = newNode.next.data;
             newNode.next = null;
             return lastDeletedNode;
-        }
-
-        /// <summary>
-        /// UC 7 search for particular node
-        /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
-
-        public int Search(int value)
-        {
-            Node temp = this.head;
-            while (temp != null)
-            {
-                if (temp.data == value)
-                {
-                    Console.WriteLine("\nNode is present ");
-                    return value;
-                }
-                temp = temp.next;
-            }
-            return value;
         }
 
         /// <summary>
