@@ -23,9 +23,9 @@ namespace DataStructureDemo058
 
             //UC1
             CustomLinkedList customLinkedList = new CustomLinkedList();
-            //customLinkedList.InsertLast(56);
-            //customLinkedList.InsertLast(30);
-            //customLinkedList.InsertLast(70);
+            customLinkedList.InsertLast(56);
+            customLinkedList.InsertLast(30);
+            customLinkedList.InsertLast(70);
 
             //UC2 Insert Front
             //customLinkedList.InsertFront(70);
@@ -37,10 +37,29 @@ namespace DataStructureDemo058
             //customLinkedList.Append(30);
             //customLinkedList.Append(70);
 
-            customLinkedList.InsertAfter(70);
-            customLinkedList.InsertAfter(30);
-            customLinkedList.InsertAfter(56);
+            //UC4 Insert Middle
+            //customLinkedList.InsertAfter(70);
+            //customLinkedList.InsertAfter(30);
+            //customLinkedList.InsertAfter(56);
+            //customLinkedList.Display();
+            //Console.ReadLine();
+
+            //UC5 delete 1st node
+
+            //customLinkedList.Display();
+            //Console.WriteLine("\nDeleted node:" + customLinkedList.DeleteFirstNode());
+            //customLinkedList.Display();
+            //Console.ReadLine();
+
+            //UC6 Delete last node
+            //customLinkedList.Display();
+            //Console.WriteLine("\nDeleted node:" + customLinkedList.DeleteLastNode());
+            //customLinkedList.Display();
+            //Console.ReadLine();
+
+            //UC7 Search for a Node
             customLinkedList.Display();
+            Console.WriteLine(customLinkedList.Search(30));
             Console.ReadLine();
 
         }

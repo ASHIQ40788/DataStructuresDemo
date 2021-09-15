@@ -52,7 +52,10 @@ namespace DataStructureDemo058
         {
             InsertFront(new_data);
         }
-
+        /// <summary>
+        /// UC4
+        /// </summary>
+        /// <param name="new_data"></param>
         internal void InsertAfter(int new_data)
         {
             if (prev_node == null)
@@ -64,6 +67,72 @@ namespace DataStructureDemo058
             new_node.next = prev_node.next;
             prev_node.next = new_node;
         }
+
+
+        /// <summary>
+        /// UC 5 Delete first node from linked list
+        /// </summary>
+        public int DeleteFirstNode()
+        {
+            if (this.head == null)
+            {
+                return 0;
+            }
+            int deleteNode = this.head.data;
+            this.head = this.head.next;
+            return deleteNode;
+        }
+
+        /// <summary>
+        /// UC6 Delete last node
+        /// </summary>
+   
+        public int DeleteLastNode()
+        {
+            Node newNode = this.head;
+            if (this.head == null)
+            {
+                return 0;
+            }
+            if (this.head.next == null)
+            {
+                this.head = null;
+                return 0;
+            }
+
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            int lastDeletedNode = newNode.next.data;
+            newNode.next = null;
+            return lastDeletedNode;
+        }
+
+        /// <summary>
+        /// UC 7 search for particular node
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+
+        public int Search(int value)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Console.WriteLine("\nNode is present ");
+                    return value;
+                }
+                temp = temp.next;
+            }
+            return value;
+        }
+
+        /// <summary>
+        /// Display values in Nodes.
+        /// </summary>
         public void Display()
         {
             Console.WriteLine("Displaying nodes");
