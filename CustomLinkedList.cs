@@ -89,6 +89,7 @@ namespace DataStructureDemo058
 
         //}
 
+        //Insert Middle of the Linked list
         public void InsertMid(int new_data)
         {
             Node new_node = new Node(new_data);
@@ -196,9 +197,52 @@ namespace DataStructureDemo058
             present_node.next = new_node;
         }
 
+
+        /// <summary>
+        /// UC9-delete node (40) from the Linked List sequence
+        /// </summary>
+        /// <param name="value"></param>
+        public void DeleteRequiredNode(int val)
+        {
+            //In temp,Head node is stored
+            Node previous = null;
+            Node temp = head;
+
+
+            //check for whether the  head node is holding the value or not.
+            if (temp != null && temp.data == val)
+            {
+                head = temp.next;
+            }
+            //search for value to delete,also update previous node as temp.next
+            while (temp != null && temp.data != val)
+            {
+                previous = temp;
+                temp = temp.next;
+            }
+
+            if (temp == null)
+            {
+                Console.WriteLine("node is not present which I was given");
+            }
+            //deleting the node. 
+            previous.next = temp.next;
+        }
+        public int SizeofList()
+        {
+            Node temp = head;
+            int c = 0;
+            while (temp != null)
+            {
+                c++;
+                temp = temp.next;
+            }
+            return c;
+        }
+
         /// <summary>
         /// Display values in Nodes.
-        /// </summary>
+       /// </summary>
         public void Display()
             {
                 Console.WriteLine("Displaying nodes");

@@ -39,10 +39,10 @@ namespace DataStructureDemo058
 
             //UC4 Insert Middle
             //customLinkedList.Display();
-            customLinkedList.InsertMid(56);
-            customLinkedList.InsertMid(30);
-            customLinkedList.InsertMid(70);
-            customLinkedList.Display();
+            //customLinkedList.InsertMid(56);
+            //customLinkedList.InsertMid(30);
+            //customLinkedList.InsertMid(70);
+            //customLinkedList.Display();
             Console.ReadLine();
 
             //UC5 delete 1st node
@@ -64,18 +64,21 @@ namespace DataStructureDemo058
             //Console.ReadLine();
 
 
-           
-            Console.WriteLine("Linkedlist before insertion:");
+           //UC8- Insert After in the linked list
+            //Console.WriteLine("Linkedlist before insertion:");
+            //customLinkedList.Display();
+            //Console.WriteLine("\nInsert node:" + customLinkedList.InsertAfter(30));
+            //customLinkedList.Display();
+            //Console.ReadLine();
+
+            //UC9-Deleting the Required Node from the Linked List.
+            Console.WriteLine("list before deletion:");
             customLinkedList.Display();
-            Console.WriteLine("\nInsert node:" + customLinkedList.InsertAfter(30));
+            customLinkedList.DeleteRequiredNode(40);
+            Console.WriteLine("list after deletion:");
+            Console.WriteLine("The size of the Linked List:" + customLinkedList.SizeofList());
             customLinkedList.Display();
             Console.ReadLine();
-
-
-
-
-
-
 
         }
     }
