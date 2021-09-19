@@ -63,7 +63,15 @@ namespace DataStructureDemo058
             //Console.WriteLine(customLinkedList.Search(30));
             //Console.ReadLine();
 
-            
+
+           
+            Console.WriteLine("Linkedlist before insertion:");
+            customLinkedList.Display();
+            Console.WriteLine("\nInsert node:" + customLinkedList.InsertAfter(30));
+            customLinkedList.Display();
+            Console.ReadLine();
+
+
 
 
 

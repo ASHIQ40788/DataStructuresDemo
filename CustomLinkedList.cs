@@ -178,11 +178,28 @@ namespace DataStructureDemo058
                 return value;
             }
 
+        /// <summary>
+        /// UC8-Insert a Node after Node
+        /// </summary>
+        /// <param name="exist_node"></param>
+        /// <param name="new_data"></param>
+        public void InsertAfter(int new_data, Node present_node)
+        {
+            if (present_node == null)
+            {
+                Console.WriteLine(" node not present");
+                return;
+            }
+            //creating a new_node in the Linked List
+            Node new_node = new Node(new_data);
+            new_node.next = present_node.next;
+            present_node.next = new_node;
+        }
 
-            /// <summary>
-            /// Display values in Nodes.
-            /// </summary>
-            public void Display()
+        /// <summary>
+        /// Display values in Nodes.
+        /// </summary>
+        public void Display()
             {
                 Console.WriteLine("Displaying nodes");
                 Node temp = this.head;
