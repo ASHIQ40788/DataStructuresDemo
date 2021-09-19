@@ -38,11 +38,12 @@ namespace DataStructureDemo058
             //customLinkedList.Append(70);
 
             //UC4 Insert Middle
-            //customLinkedList.InsertAfter(70);
-            //customLinkedList.InsertAfter(30);
-            //customLinkedList.InsertAfter(56);
             //customLinkedList.Display();
-            //Console.ReadLine();
+            customLinkedList.InsertMid(56);
+            customLinkedList.InsertMid(30);
+            customLinkedList.InsertMid(70);
+            customLinkedList.Display();
+            Console.ReadLine();
 
             //UC5 delete 1st node
 
@@ -58,9 +59,12 @@ namespace DataStructureDemo058
             //Console.ReadLine();
 
             //UC7 Search for a Node
-            customLinkedList.Display();
-            Console.WriteLine(customLinkedList.Search(30));
-            Console.ReadLine();
+            //customLinkedList.Display();
+            //Console.WriteLine(customLinkedList.Search(30));
+            //Console.ReadLine();
+
+            
+
 
 
 
