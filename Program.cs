@@ -25,6 +25,7 @@ namespace DataStructureDemo058
             CustomLinkedList customLinkedList = new CustomLinkedList();
             customLinkedList.InsertLast(56);
             customLinkedList.InsertLast(30);
+            customLinkedList.InsertLast(40); //40 requires for UC9,UC10
             customLinkedList.InsertLast(70);
 
             //UC2 Insert Front
@@ -38,12 +39,13 @@ namespace DataStructureDemo058
             //customLinkedList.Append(70);
 
             //UC4 Insert Middle
+            //customLinkedList.InsertLast(56);
+            //customLinkedList.InsertLast(70);
+            //Console.WriteLine("before insertion:");
+            //customLinkedList.InsertMiddle(30);
+            //Console.WriteLine("after insertion:");
             //customLinkedList.Display();
-            //customLinkedList.InsertMid(56);
-            //customLinkedList.InsertMid(30);
-            //customLinkedList.InsertMid(70);
-            //customLinkedList.Display();
-            Console.ReadLine();
+            //Console.ReadLine();
 
             //UC5 delete 1st node
 
@@ -64,7 +66,7 @@ namespace DataStructureDemo058
             //Console.ReadLine();
 
 
-           //UC8- Insert After in the linked list
+            //UC8- Insert After in the linked list
             //Console.WriteLine("Linkedlist before insertion:");
             //customLinkedList.Display();
             //Console.WriteLine("\nInsert node:" + customLinkedList.InsertAfter(30));
@@ -72,11 +74,16 @@ namespace DataStructureDemo058
             //Console.ReadLine();
 
             //UC9-Deleting the Required Node from the Linked List.
-            Console.WriteLine("list before deletion:");
-            customLinkedList.Display();
-            customLinkedList.DeleteRequiredNode(40);
-            Console.WriteLine("list after deletion:");
-            Console.WriteLine("The size of the Linked List:" + customLinkedList.SizeofList());
+            //Console.WriteLine("list before deletion:");
+            //customLinkedList.Display();
+            //customLinkedList.DeleteRequiredNode(40);
+            //Console.WriteLine("list after deletion:");
+            //Console.WriteLine("The size of the Linked List:" + customLinkedList.SizeofList());
+            //customLinkedList.Display();
+            //Console.ReadLine();
+
+            //UC10- Ordered Linked List in ascending order
+            customLinkedList.SortValue();
             customLinkedList.Display();
             Console.ReadLine();
 

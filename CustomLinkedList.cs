@@ -89,12 +89,13 @@ namespace DataStructureDemo058
 
         //}
 
-        //Insert Middle of the Linked list
-        public void InsertMid(int new_data)
+        //UC4---->Insert Middle of the Linked list
+        public void InsertMiddle(int new_data)
         {
-            Node new_node = new Node(new_data);
             Node position = head;
             int length = 0;
+            Node new_node = new Node(new_data);
+            
 
             //calculate length of the linked list
             while (position != null)
@@ -228,8 +229,11 @@ namespace DataStructureDemo058
             //deleting the node. 
             previous.next = temp.next;
         }
+
+        //finding size of the list
         public int SizeofList()
         {
+            //pointing temp to the Head Node.
             Node temp = head;
             int c = 0;
             while (temp != null)
@@ -241,8 +245,39 @@ namespace DataStructureDemo058
         }
 
         /// <summary>
+        /// UC10- create Ordered Linked List in ascending order
+        /// </summary>
+        public void SortValue()
+        {
+            Node initialValue = null;
+            Node temp = head;
+            int Value = 0;
+
+            //checking whether the temp isequalto null or not
+            while (temp != null)
+            {
+                initialValue = temp.next;
+                //checking whether the intialValue isequalto null or not
+                while (initialValue != null)
+                {
+
+                    if (temp.data > initialValue.data)
+                    {
+                        Value = initialValue.data;
+                        initialValue.data = temp.data;
+                        temp.data = Value;
+                    }
+                    initialValue  = initialValue.next;
+                    temp = temp.next;
+                }
+                Console.WriteLine("Sorted list");
+            }
+           
+        }
+
+        /// <summary>
         /// Display values in Nodes.
-       /// </summary>
+        /// </summary>
         public void Display()
             {
                 Console.WriteLine("Displaying nodes");
