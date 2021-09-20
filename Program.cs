@@ -25,6 +25,7 @@ namespace DataStructureDemo058
             CustomLinkedList customLinkedList = new CustomLinkedList();
             customLinkedList.InsertLast(56);
             customLinkedList.InsertLast(30);
+            customLinkedList.InsertLast(40); //40 requires for UC9,UC10
             customLinkedList.InsertLast(70);
 
             //UC2 Insert Front
@@ -73,7 +74,6 @@ namespace DataStructureDemo058
 
             //UC9-Deleting the Required Node from the Linked List.
             Console.WriteLine("list before deletion:");
-            customLinkedList.Display();
             customLinkedList.DeleteRequiredNode(40);
             Console.WriteLine("list after deletion:");
             Console.WriteLine("The size of the Linked List:" + customLinkedList.SizeofList());
