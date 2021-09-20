@@ -37,11 +37,12 @@ namespace DataStructureDemo058
             //customLinkedList.Append(30);
             //customLinkedList.Append(70);
 
-            //UC4 Insert Middle
-            //customLinkedList.Display();
-            customLinkedList.InsertMid(56);
-            customLinkedList.InsertMid(30);
-            customLinkedList.InsertMid(70);
+           //UC4 Insert Middle
+            customLinkedList.InsertLast(56);
+            customLinkedList.InsertLast(70);
+            Console.WriteLine("before insertion:");
+            customLinkedList.InsertMiddle(30);
+            Console.WriteLine("after insertion:");
             customLinkedList.Display();
             Console.ReadLine();
 
