@@ -89,12 +89,13 @@ namespace DataStructureDemo058
 
         //}
         
-        // UC4-Insert Middle in the LinkedList
-        public void InsertMid(int new_data)
+         //UC4---->Insert Middle of the Linked list
+        public void InsertMiddle(int new_data)
         {
-            Node new_node = new Node(new_data);
             Node position = head;
             int length = 0;
+            Node new_node = new Node(new_data);
+            
 
             //calculate length of the linked list
             while (position != null)
@@ -116,6 +117,7 @@ namespace DataStructureDemo058
             new_node.next = position.next;
             position.next = new_node;
         }
+            
             
             /// <summary>
             /// UC 5 Delete first node from linked list
